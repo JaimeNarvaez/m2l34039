@@ -9,3 +9,27 @@ h1 {
     font-size: 24px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
 }
+
+@keyframes color-change {
+    0% {
+      color: blue;
+      font-size: 11px;
+      opacity: 0;
+    }
+  
+    50% {
+      color: red;
+      font-size: 22px;
+      opacity: 1;
+    }
+  
+    100% {
+      color: blue;
+      font-size: 11px;
+      opacity: 0;
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
